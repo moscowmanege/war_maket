@@ -1,15 +1,6 @@
 html, body
 	margin 0
 	padding 0
-
-.leaflet-container
-	background-color black!important
-	img
-		max-width none!important
-		width auto!important
-		height auto!important
-
-html, body, .content_block, .scroll_block
 	height 100%
 
 .content_block
@@ -17,9 +8,23 @@ html, body, .content_block, .scroll_block
 	height 100%
 	overflow hidden
 
-.scroll_block
+.swiper-container
 	width 100%
-	background-color grey
+	height 100%
+	.swiper-slide
+		font-size 18pt
+		background-color grey
+
+#plan_map
+	width 100%
+	height 100%
+
+.leaflet-container
+	background-color black!important
+	img
+		max-width none!important
+		width auto!important
+		height auto!important
 
 .navigate_block
 	z-index 9999

@@ -2,12 +2,16 @@ $(function() {
 
 	// Swiper
 
-	var swiper = new Swiper('.content_block', {
-		pagination: '.swiper-pagination',
+	var swiperV = new Swiper('.swiper-container-v', {
+		pagination: '.swiper-pagination-v',
 		paginationClickable: true,
-		wrapperClass: 'content_inner',
-		slideClass: 'scroll_block',
 		direction: 'vertical'
+	});
+
+	var swiperH = new Swiper('.swiper-container-h', {
+		pagination: '.swiper-pagination-h',
+		paginationClickable: true,
+		direction: 'horizontal'
 	});
 
 	// Leaflet
@@ -43,9 +47,9 @@ $(function() {
 			var y = (parseFloat($target.attr('data-y')) || 0) + event.dy;
 
 			if (y >= 30) {
-				swiper.slideNext();
+				swiperV.slideNext();
 			} else if (y <= -30) {
-				swiper.slidePrev();
+				swiperV.slidePrev();
 			}
 
 			// var $body = $('body');

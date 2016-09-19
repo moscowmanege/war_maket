@@ -14,7 +14,22 @@ html
 		script(type='text/javascript', src='js/main.js')
 	body
 		.navigate_block: .navigate_center: .navigate_gap: .gap_inner
-		.swiper-pagination
-		.content_block: .content_inner
-			.scroll_block
-			.scroll_block#plan_map
+		.content_block
+			.swiper-container.swiper-container-v
+				.swiper-pagination.swiper-pagination-v
+				.swiper-wrapper
+					.swiper-slide Main
+
+					.swiper-slide About
+
+					.swiper-slide
+						.swiper-container.swiper-container-h
+							.swiper-pagination.swiper-pagination-h
+							.swiper-wrapper
+								.swiper-slide Head 1
+								.swiper-slide Head 2
+								.swiper-slide Head 3
+
+					.swiper-slide: #plan_map
+
+					.swiper-slide Contacts
