@@ -11,9 +11,11 @@ $(function() {
 	var swiperH = new Swiper('.swiper-container-h', {
 		pagination: '.swiper-pagination-h',
 		paginationClickable: true,
-		slidesPerView: 2,
+		slidesPerView: 'auto',
+		// autoHeight: true,
+		initialSlide: 1,
 		centeredSlides: true,
-		spaceBetween: 40,
+		spaceBetween: 30,
 		direction: 'horizontal'
 	});
 

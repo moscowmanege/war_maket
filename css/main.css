@@ -21,6 +21,7 @@ body {
   background-color: #fff;
 }
 .swiper-container .swiper-container-h .swiper-slide {
+  width: 60%;
   background-color: #008000;
 }
 #plan_map {
