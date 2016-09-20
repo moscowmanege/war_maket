@@ -17,6 +17,12 @@ body {
   font-size: 18pt;
   background-color: #808080;
 }
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+.swiper-container .swiper-container-h .swiper-slide {
+  background-color: #008000;
+}
 #plan_map {
   width: 100%;
   height: 100%;

@@ -11,6 +11,9 @@ $(function() {
 	var swiperH = new Swiper('.swiper-container-h', {
 		pagination: '.swiper-pagination-h',
 		paginationClickable: true,
+		slidesPerView: 2,
+		centeredSlides: true,
+		spaceBetween: 40,
 		direction: 'horizontal'
 	});
 
@@ -46,23 +49,13 @@ $(function() {
 			var $target = $(event.target);
 			var y = (parseFloat($target.attr('data-y')) || 0) + event.dy;
 
-			if (y >= 30) {
+			var delta_speed = Math.abs(y) / event.speed > 0.35;
+
+			if (y >= 30 && delta_speed) {
 				swiperV.slideNext();
-			} else if (y <= -30) {
+			} else if (y <= -30 && delta_speed) {
 				swiperV.slidePrev();
 			}
-
-			// var $body = $('body');
-			// if (y > 30) {
-			// 	$body.scrollTop($body.scrollTop() + $body.height());
-			// } else if (y <= -30) {
-			// 	$body.scrollTop($body.scrollTop() - $body.height());
-			// }
-
-			// var $body = $('body');
-			// requestAnimationFrame(function() {
-			// 	$body.scrollTop($body.scrollTop() + y);
-			// });
 
 			$target.css('transform', 'translateY(' + y + 'px)');
 			$target.attr('data-y', y);
