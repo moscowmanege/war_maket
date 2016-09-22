@@ -17,11 +17,16 @@ body {
   font-size: 18pt;
   background-color: #808080;
 }
+.swiper-container .swiper-pagination {
+  width: 0;
+  right: auto;
+  left: 10px !important;
+}
 .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fff;
 }
 .swiper-container .swiper-container-h .swiper-slide {
-  width: 60%;
+  width: 70%;
   background-color: #008000;
 }
 #plan_map {
@@ -43,19 +48,21 @@ body {
   background-color: #fff;
   position: fixed;
   right: 30px;
-  top: 120px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 .navigate_block .navigate_center {
-  top: 70px;
+  top: 40px;
   position: relative;
 }
 .navigate_block .navigate_center .navigate_gap {
   width: 60px;
-  height: 60px;
+  height: 120px;
   border-radius: 60px;
   position: relative;
   left: -29px;

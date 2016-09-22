@@ -15,7 +15,7 @@ $(function() {
 		// autoHeight: true,
 		initialSlide: 1,
 		centeredSlides: true,
-		spaceBetween: 30,
+		spaceBetween: 20,
 		direction: 'horizontal'
 	});
 
