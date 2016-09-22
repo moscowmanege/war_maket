@@ -5,7 +5,9 @@ $(function() {
 	var swiperV = new Swiper('.swiper-container-v', {
 		pagination: '.swiper-pagination-v',
 		paginationClickable: true,
-		direction: 'vertical'
+		direction: 'vertical',
+		keyboardControl: true,
+		touchRatio: 0
 	});
 
 	var swiperH = new Swiper('.swiper-container-h', {
@@ -16,7 +18,8 @@ $(function() {
 		initialSlide: 1,
 		centeredSlides: true,
 		spaceBetween: 20,
-		direction: 'horizontal'
+		direction: 'horizontal',
+		keyboardControl: true
 	});
 
 	// Leaflet
