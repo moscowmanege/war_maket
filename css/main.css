@@ -20,7 +20,7 @@ body,
   z-index: 9999999;
 }
 .menu-block .menu-inner {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   box-sizing: border-box;
   padding-top: 10px;
@@ -45,7 +45,7 @@ body,
   color: #ad8820;
 }
 .content-block .content-footer .footer-inner {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .content-block .content-item {
@@ -65,7 +65,28 @@ body,
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.content-block .content-item .logo {
+.content-block .content-item.video {
+  position: fixed;
+  background-color: #000;
+  height: 100%;
+  overflow: hidden;
+}
+.content-block .content-item.video video {
+  z-index: 0;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.content-block .content-item.main {
+  background-color: transparent;
+}
+.content-block .content-item.main .logo {
   top: 0;
   left: 0;
   right: 0;
@@ -75,16 +96,6 @@ body,
   display: block;
   position: absolute;
   z-index: 1;
-}
-.content-block .content-item video {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
 }
 .content-block .content-item.map {
   padding-top: 40px;
@@ -142,6 +153,7 @@ body,
 }
 .swiper-container.swiper-container-h .swiper-slide {
   width: 40%;
+  min-width: 320px;
   background-color: #008000;
 }
 #map-overlay {

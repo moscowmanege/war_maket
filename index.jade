@@ -20,11 +20,13 @@ html
 			a.menu-item(href='#') Контакты
 		.content-block
 
-			.content-item.main
-				img.logo(src='img/logo.svg')
-				//- video(width='100%', height='auto', autoplay='autoplay', loop='loop', controls='')
+			//- .content-item.video
+				video(autoplay='autoplay', loop='loop', muted='muted', controls='')
 					source(src='video/1.mp4', type='video/mp4')
 					| Your browser does not support the video tag.
+
+			.content-item.main
+				img.logo(src='img/logo.svg')
 
 			.content-item.heads: .content-inner
 				.swiper-container.swiper-container-h
