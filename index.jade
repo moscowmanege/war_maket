@@ -19,13 +19,14 @@ html
 			a.menu-item(href='#') Карта
 			a.menu-item(href='#') Контакты
 		.content-block
-			.content-item
+
+			.content-item.main
 				img.logo(src='img/logo.svg')
 				//- video(width='100%', height='auto', autoplay='autoplay', loop='loop', controls='')
 					source(src='video/1.mp4', type='video/mp4')
 					| Your browser does not support the video tag.
-				.video
-			.content-item: .content-inner
+
+			.content-item.heads: .content-inner
 				.swiper-container.swiper-container-h
 					.swiper-pagination.swiper-pagination-h
 					.swiper-wrapper
@@ -34,6 +35,7 @@ html
 						.swiper-slide Head 3
 						.swiper-slide Head 4
 						.swiper-slide Head 5
+
 			.content-item.about: .content-inner
 				.content-title О выставке
 				.content-columns
@@ -43,8 +45,14 @@ html
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			.content-item: .content-inner#plan_map
+
+			.content-item.map
+				#map-overlay
+				.content-inner
+					.content-title Карта выставки
+
 			.content-item.contacts: .content-inner
 				.content-title Контакты
+
 			.content-footer: .footer-inner
 				div ФУТЕР
