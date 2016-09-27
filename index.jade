@@ -17,11 +17,16 @@ html
 		script(type='text/javascript', src='js/g_maps.js')
 	body
 		.menu-block: .menu-inner
-			a.menu-item.main(href='#') Главная
-			a.menu-item.heads(href='#') Головы
-			a.menu-item.about(href='#') О выставке
-			a.menu-item.map(href='#') Карта
-			a.menu-item.contacts(href='#') Контакты
+			.menu-items.left
+				a.menu-item.main(href='#') Главная
+				a.menu-item.heads(href='#') Цитаты
+				a.menu-item.about(href='#') О выставке
+				a.menu-item.schedule(href='#') Расписание
+				a.menu-item.map(href='#') План выставки
+				a.menu-item.contacts(href='#') Контакты
+			.menu-items.right
+				a.menu-item.locale(href='#') EN
+
 		.content-block
 
 			.content-item.video
@@ -52,10 +57,13 @@ html
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+			.content-item.schedule: .content-inner
+				.content-title Расписание
+
 			.content-item.map
 				#plan-canvas
 				.content-inner
-					.content-title Карта выставки
+					.content-title План выставки
 
 			.content-item.contacts
 				#map-canvas

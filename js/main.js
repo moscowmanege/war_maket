@@ -1,6 +1,6 @@
 $(function() {
 
-	$('.menu-item').on('click', function() {
+	$('.menu-items.left').children('.menu-item').on('click', function() {
 		var position = $(this).attr('class').split(' ')[1];
 
 		$('body').animate({

@@ -16,12 +16,15 @@
   </head>
   <body>
     <div class="menu-block">
-      <div class="menu-inner"><a href="#" class="menu-item main">Главная</a><a href="#" class="menu-item heads">Головы</a><a href="#" class="menu-item about">О выставке</a><a href="#" class="menu-item map">Карта</a><a href="#" class="menu-item contacts">Контакты</a></div>
+      <div class="menu-inner">
+        <div class="menu-items left"><a href="#" class="menu-item main">Главная</a><a href="#" class="menu-item heads">Цитаты</a><a href="#" class="menu-item about">О выставке</a><a href="#" class="menu-item schedule">Расписание</a><a href="#" class="menu-item map">План выставки</a><a href="#" class="menu-item contacts">Контакты</a></div>
+        <div class="menu-items right"><a href="#" class="menu-item locale">EN</a></div>
+      </div>
     </div>
     <div class="content-block">
       <div class="content-item video">
         <video autoplay="autoplay" loop="loop" muted="muted" controls="">
-          <source src="video/3.mp4" type="video/mp4">Your browser does not support the video tag.
+          <source src="video/1.mp4" type="video/mp4">Your browser does not support the video tag.
         </video>
       </div>
       <div class="content-item main"><img src="img/logo.svg" class="logo"></div>
@@ -52,10 +55,15 @@
           </div>
         </div>
       </div>
+      <div class="content-item schedule">
+        <div class="content-inner">
+          <div class="content-title">Расписание</div>
+        </div>
+      </div>
       <div class="content-item map">
         <div id="plan-canvas"></div>
         <div class="content-inner">
-          <div class="content-title">Карта выставки</div>
+          <div class="content-title">План выставки</div>
         </div>
       </div>
       <div class="content-item contacts">
