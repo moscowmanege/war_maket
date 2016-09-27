@@ -10,30 +10,41 @@ html
 		script(type='text/javascript', src='js/jquery-2.2.4.min.js')
 		script(type='text/javascript', src='js/swiper.jquery.min.js')
 		script(type='text/javascript', src='js/leaflet.js')
-		script(type='text/javascript', src='js/interact.min.js')
 		script(type='text/javascript', src='js/main.js')
 	body
-		.navigate_block: .navigate_center: .navigate_gap: .gap_inner
-		.content_block
-			.swiper-container.swiper-container-v
-				.swiper-pagination.swiper-pagination-v
-				.swiper-wrapper
-					.swiper-slide
-						h2 Main War Super Site
-					.swiper-slide
-						h2 About
-						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					.swiper-slide
-						.swiper-container.swiper-container-h
-							.swiper-pagination.swiper-pagination-h
-							.swiper-wrapper
-								.swiper-slide Head 1
-								.swiper-slide Head 2
-								.swiper-slide Head 3
-								.swiper-slide Head 4
-								.swiper-slide Head 5
-
-					.swiper-slide: #plan_map
-
-					.swiper-slide
-						h2 Contacts
+		.menu-block: .menu-inner
+			a.menu-item(href='#') Главная
+			a.menu-item(href='#') Головы
+			a.menu-item(href='#') О выставке
+			a.menu-item(href='#') Карта
+			a.menu-item(href='#') Контакты
+		.content-block
+			.content-item
+				img.logo(src='img/logo.svg')
+				//- video(width='100%', height='auto', autoplay='autoplay', loop='loop', controls='')
+					source(src='video/1.mp4', type='video/mp4')
+					| Your browser does not support the video tag.
+				.video
+			.content-item: .content-inner
+				.swiper-container.swiper-container-h
+					.swiper-pagination.swiper-pagination-h
+					.swiper-wrapper
+						.swiper-slide Head 1
+						.swiper-slide Head 2
+						.swiper-slide Head 3
+						.swiper-slide Head 4
+						.swiper-slide Head 5
+			.content-item.about: .content-inner
+				.content-title О выставке
+				.content-columns
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			.content-item: .content-inner#plan_map
+			.content-item.contacts: .content-inner
+				.content-title Контакты
+			.content-footer: .footer-inner
+				div ФУТЕР
