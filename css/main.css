@@ -165,7 +165,7 @@ body,
   min-width: 320px;
   background-color: #800000;
 }
-#map-overlay,
+#plan-canvas,
 #map-canvas {
   width: 100%;
   height: 100%;
