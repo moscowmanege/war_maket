@@ -1,7 +1,6 @@
 html, body
 	margin 0
 	padding 0
-	height 100%
 
 html, body, .content-block, .content-item, .content-inner
 	height 100%
@@ -109,6 +108,14 @@ html, body, .content-block, .content-item, .content-inner
 						margin 0
 						padding 0
 						padding-bottom 20px
+		&.contacts
+			padding-top 40px
+			.content-inner
+				max-width 1280px
+				margin 0 auto
+				height 0
+				position relative
+				z-index 999
 
 .swiper-container
 	width 100%
@@ -126,9 +133,10 @@ html, body, .content-block, .content-item, .content-inner
 		width 40%
 		min-width 320px
 		// height 80%
-		background-color green
+		background-color maroon
 
 #map-overlay
+#map-canvas
 	width 100%
 	height 100%
 	position absolute

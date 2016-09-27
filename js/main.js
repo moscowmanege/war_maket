@@ -1,5 +1,15 @@
 $(function() {
 
+	$('.menu-item').on('click', function() {
+		var position = $(this).attr('class').split(' ')[1];
+
+		$('body').animate({
+			'scrollTop': $('.content-item').filter('.' + position).offset().top
+		}, 400);
+
+		return false;
+	});
+
 	// Swiper
 
 	var swiperH = new Swiper('.swiper-container-h', {
