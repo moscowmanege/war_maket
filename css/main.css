@@ -22,7 +22,8 @@ body,
 .menu-block .menu-inner {
   max-width: 1280px;
   margin: 0 auto;
-  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .menu-block .menu-inner .menu-items {
   padding-top: 12px;
@@ -64,6 +65,8 @@ body,
 .content-block .content-footer .footer-inner {
   max-width: 1280px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .content-block .content-item {
   width: 100%;
@@ -120,6 +123,8 @@ body,
 .content-block .content-item.map .content-inner {
   max-width: 1280px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
   height: 0;
   position: relative;
   z-index: 999;
@@ -130,6 +135,8 @@ body,
 .content-block .content-item.contacts .content-inner {
   max-width: 1280px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .content-block .content-item.about {
   padding-top: 40px;
@@ -140,6 +147,8 @@ body,
 .content-block .content-item.about .content-inner {
   max-width: 1280px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .content-block .content-item.about .content-inner .content-columns {
   -webkit-columns: 4 320px;
@@ -161,6 +170,8 @@ body,
 .content-block .content-item.schedule .content-inner {
   max-width: 1280px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .content-block .content-item.contacts {
   padding-top: 40px;
@@ -168,6 +179,8 @@ body,
 .content-block .content-item.contacts .content-inner {
   max-width: 1280px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
   height: 0;
   position: relative;
   z-index: 999;
