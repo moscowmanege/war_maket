@@ -4,7 +4,7 @@ $(function() {
 		var position = $(this).attr('class').split(' ')[1];
 
 		$('body').animate({
-			'scrollTop': $('.content-item').filter('.' + position).offset().top
+			'scrollTop': $('.content-item').filter('.' + position).offset().top - 40
 		}, 400);
 
 		return false;
