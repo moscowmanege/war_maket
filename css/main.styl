@@ -62,15 +62,17 @@ html, body, .content-block, .content-item, .content-inner
 			padding-right 40px
 			.content-title
 				font-size 24pt
-				background-color black
 				color rgb(173, 136, 32)
 				display inline-block
-				padding 5px
-				padding-left 10px
-				padding-right 10px
 				box-sizing border-box
 				text-transform uppercase
 				margin-bottom 40px
+				span
+					background-color black
+					padding 5px
+					padding-left 10px
+					padding-right 10px
+					margin-right -5px
 
 		&.video
 			position fixed
@@ -78,6 +80,7 @@ html, body, .content-block, .content-item, .content-inner
 			height 100%
 			overflow hidden
 			video
+				overflow hidden
 				z-index 0
 				position fixed
 				min-width 100%
