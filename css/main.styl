@@ -170,8 +170,10 @@ html, body, .content-block, .content-item, .content-inner
 			background-color rgb(173, 136, 32)
 			height auto
 			.content-columns
+				hyphens auto
 				columns 4 320px
 				column-gap 2em
+				column-rule 5px solid black
 				font-size 14pt
 				line-height 16pt
 				p
@@ -257,6 +259,7 @@ html, body, .content-block, .content-item, .content-inner
 		.swiper-pagination-bullet-active
 			background-color white
 	&.swiper-container-h .swiper-slide
+		cursor default
 		width 40%
 		min-width 320px
 		// background-color maroon

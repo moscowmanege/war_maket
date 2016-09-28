@@ -196,12 +196,18 @@ body,
   height: auto;
 }
 .content-block .content-item.about .content-columns {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   -webkit-columns: 4 320px;
      -moz-columns: 4 320px;
           columns: 4 320px;
   -webkit-column-gap: 2em;
      -moz-column-gap: 2em;
           column-gap: 2em;
+  -webkit-column-rule: 5px solid #000;
+     -moz-column-rule: 5px solid #000;
+          column-rule: 5px solid #000;
   font-size: 14pt;
   line-height: 16pt;
 }
@@ -303,6 +309,7 @@ body,
   background-color: #fff;
 }
 .swiper-container.swiper-container-h .swiper-slide {
+  cursor: default;
   width: 40%;
   min-width: 320px;
 }
