@@ -142,17 +142,31 @@ html, body, .content-block, .content-item, .content-inner
 				position relative
 				.schedule-item
 					width 50%
-					height 180px
+					min-height 180px
 					position relative
 					box-sizing border-box
+					padding 10px
+					padding-bottom 0
 					&:nth-child(odd)
 						left 0
-						padding-right 20px
 						background-color rgb(173, 136, 32)
 					&:nth-child(even)
 						left 50%
-						padding-left 20px
 						background-color maroon
+					.schedule-date
+						font-size 24pt
+						line-height 26pt
+						padding-bottom 20px
+					.schedule-event
+						padding-bottom 20px
+						.event-title
+							text-transform uppercase
+							font-size 16pt
+							line-height 18pt
+							padding-bottom 10px
+						.event-description
+							font-size 12pt
+							line-height 14pt
 
 		&.contacts
 			padding-top 40px
