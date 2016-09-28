@@ -172,6 +172,15 @@ body,
   position: relative;
   z-index: 999;
 }
+.content-block .content-item.contacts .content-inner .content-box {
+  width: 380px;
+  height: 480px;
+  float: right;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.6);
+}
 .swiper-container {
   width: 100%;
   height: 100%;
