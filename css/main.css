@@ -226,6 +226,10 @@ body,
   box-sizing: border-box;
   padding: 10px;
   padding-bottom: 0;
+  margin-bottom: 10px;
+}
+.content-block .content-item.schedule .content-schedule .schedule-item:last-child {
+  margin-bottom: 0;
 }
 .content-block .content-item.schedule .content-schedule .schedule-item:nth-child(odd) {
   left: 0;
