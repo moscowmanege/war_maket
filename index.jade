@@ -1,5 +1,5 @@
 - var randomInt = function(min, max) { return Math.round(min - 0.5 + Math.random() * (max - min + 1)); }
-- var getDash = function(str) { return str.split(' ').map(function(w) { return '<span>' + w + '</span>' }).join(' '); }
+- var getDash = function(str) { return str.split(' ').map(function(w) { return '<span>' + w + '</span>'; }).join(' '); }
 
 doctype html
 html
@@ -22,7 +22,7 @@ html
 				a.menu-item.main(href='#') Главная
 				a.menu-item.heads(href='#') Цитаты
 				a.menu-item.about(href='#') О выставке
-				a.menu-item.schedule(href='#') Расписание
+				a.menu-item.schedule(href='#') Расписание событий
 				a.menu-item.map(href='#') План выставки
 				a.menu-item.contacts(href='#') Как добраться
 			.menu-items.right
@@ -59,7 +59,7 @@ html
 					p Частицы с полуцелым спином другие. Чтобы частица со спином ½ вернула свое состояние, ее нужно повернуть вокруг своей оси два раза — эта частица асимметрична. Такие частицы не могут занимать более одного состояния на частицу — они как бы избегают друг друга. Но не сложно сообразить, что если две такие частицы все же образуют пару, то их суммарный спин неизбежно образует целый спин. А значит, пары могут вести себя подобно бозонам. Действительно, так и происходит, подобный механизм лежит в основе явления сверхпроводимости и сверхтекучести.
 
 			.content-item.schedule: .content-inner
-				.content-title!= getDash('Расписание')
+				.content-title!= getDash('Расписание событий')
 				.content-schedule
 
 					.schedule-item
