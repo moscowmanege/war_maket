@@ -54,17 +54,22 @@ html, body, .content-block, .content-item, .content-inner
 		width 100%
 		background-color lightgrey
 		position relative
-		.content-title
-			font-size 24pt
-			background-color black
-			color rgb(173, 136, 32)
-			display inline-block
-			padding 5px
-			padding-left 10px
-			padding-right 10px
-			box-sizing border-box
-			text-transform uppercase
-			margin-bottom 20px
+		.content-inner
+			max-width 1280px
+			margin 0 auto
+			padding-left 40px
+			padding-right 40px
+			.content-title
+				font-size 24pt
+				background-color black
+				color rgb(173, 136, 32)
+				display inline-block
+				padding 5px
+				padding-left 10px
+				padding-right 10px
+				box-sizing border-box
+				text-transform uppercase
+				margin-bottom 20px
 
 		&.video
 			position fixed
@@ -99,13 +104,15 @@ html, body, .content-block, .content-item, .content-inner
 				position absolute
 				z-index 1
 
+		&.heads
+			.content-inner
+				max-width none
+				width 100%
+				padding 0
+
 		&.map
 			padding-top 40px
 			.content-inner
-				max-width 1280px
-				margin 0 auto
-				padding-left 40px
-				padding-right 40px
 				height 0
 				position relative
 				z-index 999
@@ -115,35 +122,21 @@ html, body, .content-block, .content-item, .content-inner
 			padding-bottom 40px
 			background-color rgb(173, 136, 32)
 			height auto
-			.content-inner
-				max-width 1280px
-				margin 0 auto
-				padding-left 40px
-				padding-right 40px
-				.content-columns
-					columns 4 320px
-					column-gap 2em
-					p
-						margin 0
-						padding 0
-						padding-bottom 20px
+			.content-columns
+				columns 4 320px
+				column-gap 2em
+				p
+					margin 0
+					padding 0
+					padding-bottom 20px
 
 		&.schedule
 			padding-top 40px
 			background-color black
-			.content-inner
-				max-width 1280px
-				margin 0 auto
-				padding-left 40px
-				padding-right 40px
 
 		&.contacts
 			padding-top 40px
 			.content-inner
-				max-width 1280px
-				margin 0 auto
-				padding-left 40px
-				padding-right 40px
 				height 0
 				position relative
 				z-index 999

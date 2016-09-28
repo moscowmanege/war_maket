@@ -73,7 +73,13 @@ body,
   background-color: #d3d3d3;
   position: relative;
 }
-.content-block .content-item .content-title {
+.content-block .content-item .content-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.content-block .content-item .content-inner .content-title {
   font-size: 24pt;
   background-color: #000;
   color: #ad8820;
@@ -117,14 +123,15 @@ body,
   position: absolute;
   z-index: 1;
 }
+.content-block .content-item.heads .content-inner {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+}
 .content-block .content-item.map {
   padding-top: 40px;
 }
 .content-block .content-item.map .content-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
   height: 0;
   position: relative;
   z-index: 999;
@@ -135,13 +142,7 @@ body,
   background-color: #ad8820;
   height: auto;
 }
-.content-block .content-item.about .content-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.content-block .content-item.about .content-inner .content-columns {
+.content-block .content-item.about .content-columns {
   -webkit-columns: 4 320px;
      -moz-columns: 4 320px;
           columns: 4 320px;
@@ -149,7 +150,7 @@ body,
      -moz-column-gap: 2em;
           column-gap: 2em;
 }
-.content-block .content-item.about .content-inner .content-columns p {
+.content-block .content-item.about .content-columns p {
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
@@ -158,20 +159,10 @@ body,
   padding-top: 40px;
   background-color: #000;
 }
-.content-block .content-item.schedule .content-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
 .content-block .content-item.contacts {
   padding-top: 40px;
 }
 .content-block .content-item.contacts .content-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
   height: 0;
   position: relative;
   z-index: 999;
