@@ -19,7 +19,7 @@ $(function() {
 		// autoHeight: true,
 		initialSlide: 1,
 		centeredSlides: true,
-		spaceBetween: 20,
+		spaceBetween: 0,
 		direction: 'horizontal',
 		keyboardControl: true
 	});

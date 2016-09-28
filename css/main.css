@@ -136,6 +136,51 @@ body,
   width: 100%;
   padding: 0;
 }
+.content-block .content-item.heads .content-inner .head-name {
+  color: #fff;
+  font-size: 24pt;
+  display: inline-block;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  max-width: 320px;
+}
+.content-block .content-item.heads .content-inner .head-name span {
+  display: inline-block;
+  background-color: #ad8820;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: -5px;
+  margin-bottom: 3px;
+}
+.content-block .content-item.heads .content-inner .head-status {
+  margin-top: 5px;
+  color: #000;
+  font-size: 10pt;
+  line-height: 12pt;
+  max-width: 320px;
+  text-transform: uppercase;
+  color: #ad8820;
+}
+.content-block .content-item.heads .content-inner .head-quote {
+  font-size: 14pt;
+  line-height: 16pt;
+}
+.content-block .content-item.heads .content-inner .head-quote:before {
+  font-size: 62pt;
+  line-height: 62pt;
+  display: block;
+  content: '«';
+  margin-left: -40px;
+}
+.content-block .content-item.heads .content-inner .head-quote:after {
+  font-size: 62pt;
+  line-height: 62pt;
+  display: block;
+  position: relative;
+  left: 100%;
+  content: '»';
+}
 .content-block .content-item.map {
   padding-top: 40px;
 }
@@ -169,7 +214,7 @@ body,
   padding-top: 40px;
   padding-bottom: 40px;
   height: auto;
-  background-color: #808080;
+  background-color: #d3d3d3;
 }
 .content-block .content-item.schedule .content-schedule {
   position: relative;
@@ -184,11 +229,12 @@ body,
 }
 .content-block .content-item.schedule .content-schedule .schedule-item:nth-child(odd) {
   left: 0;
-  background-color: #ad8820;
+  border-right: 5px solid #000;
 }
 .content-block .content-item.schedule .content-schedule .schedule-item:nth-child(even) {
   left: 50%;
-  background-color: #800000;
+  border-left: 5px solid #000;
+  margin-left: -5px;
 }
 .content-block .content-item.schedule .content-schedule .schedule-item .schedule-date {
   font-size: 24pt;
@@ -235,8 +281,14 @@ body,
   height: 100%;
 }
 .swiper-container .swiper-slide {
-  font-size: 18pt;
-  background-color: #808080;
+  padding: 40px;
+  padding-right: 60px;
+  padding-left: 60px;
+  box-sizing: border-box;
+  border-right: 5px solid #000;
+}
+.swiper-container .swiper-slide:first-child {
+  border-left: 5px solid #000;
 }
 .swiper-container .swiper-pagination {
   width: 0;
@@ -249,7 +301,6 @@ body,
 .swiper-container.swiper-container-h .swiper-slide {
   width: 40%;
   min-width: 320px;
-  background-color: #800000;
 }
 #plan-canvas,
 #map-canvas {

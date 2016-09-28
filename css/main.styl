@@ -116,6 +116,46 @@ html, body, .content-block, .content-item, .content-inner
 				max-width none
 				width 100%
 				padding 0
+				.head-name
+					color white
+					font-size 24pt
+					display inline-block
+					box-sizing border-box
+					text-transform uppercase
+					max-width 320px
+					span
+						display inline-block
+						background-color rgb(173, 136, 32)
+						padding 2px
+						padding-left 10px
+						padding-right 10px
+						margin-right -5px
+						margin-bottom 3px
+				.head-status
+					margin-top 5px
+					color black
+					font-size 10pt
+					line-height 12pt
+					max-width 320px
+					text-transform uppercase
+					color rgb(173, 136, 32)
+				.head-quote
+					font-size 14pt
+					line-height 16pt
+					// color rgb(173, 136, 32)
+					&:before
+						font-size 62pt
+						line-height 62pt
+						display block
+						content '«'
+						margin-left -40px
+					&:after
+						font-size 62pt
+						line-height 62pt
+						display block
+						position relative
+						left 100%
+						content '»'
 
 		&.map
 			padding-top 40px
@@ -143,7 +183,7 @@ html, body, .content-block, .content-item, .content-inner
 			padding-top 40px
 			padding-bottom 40px
 			height auto
-			background-color grey
+			background-color lightgrey
 			.content-schedule
 				position relative
 				.schedule-item
@@ -155,10 +195,13 @@ html, body, .content-block, .content-item, .content-inner
 					padding-bottom 0
 					&:nth-child(odd)
 						left 0
-						background-color rgb(173, 136, 32)
+						border-right 5px solid black
+						// background-color rgb(173, 136, 32)
 					&:nth-child(even)
 						left 50%
-						background-color maroon
+						border-left 5px solid black
+						margin-left -5px
+						// background-color maroon
 					.schedule-date
 						font-size 24pt
 						line-height 26pt
@@ -197,8 +240,13 @@ html, body, .content-block, .content-item, .content-inner
 	width 100%
 	height 100%
 	.swiper-slide
-		font-size 18pt
-		background-color grey
+		padding 40px
+		padding-right 60px
+		padding-left 60px
+		box-sizing border-box
+		border-right 5px solid black
+		&:first-child
+			border-left 5px solid black
 	.swiper-pagination
 		width 0
 		right auto
@@ -208,8 +256,7 @@ html, body, .content-block, .content-item, .content-inner
 	&.swiper-container-h .swiper-slide
 		width 40%
 		min-width 320px
-		// height 80%
-		background-color maroon
+		// background-color maroon
 
 #plan-canvas
 #map-canvas
