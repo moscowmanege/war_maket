@@ -26,7 +26,7 @@ $(function() {
 		paginationClickable: true,
 		slidesPerView: 'auto',
 		// autoHeight: true,
-		initialSlide: 1,
+		initialSlide: Math.ceil(($('.swiper-slide').length / 2) - 1),
 		centeredSlides: true,
 		spaceBetween: 0,
 		direction: 'horizontal',

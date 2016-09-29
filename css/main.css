@@ -164,7 +164,8 @@ body,
 }
 .content-block .content-item.heads .content-inner .head-quote {
   font-size: 14pt;
-  line-height: 16pt;
+  line-height: 18pt;
+  text-transform: uppercase;
 }
 .content-block .content-item.heads .content-inner .head-quote:before {
   font-size: 62pt;
