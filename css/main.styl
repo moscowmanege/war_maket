@@ -169,6 +169,17 @@ html, body, .content-block, .content-item, .content-inner
 			padding-bottom 40px
 			background-color rgb(173, 136, 32)
 			height auto
+			.content-line
+				max-width 1280px
+				width 100%
+				height 8px
+				background-color rgb(173, 136, 32)
+				position absolute
+				z-index 0
+				&.top
+					top 37%
+				&.bottom
+					bottom 33%
 			.content-columns
 				hyphens auto
 				columns 4 320px
@@ -176,7 +187,17 @@ html, body, .content-block, .content-item, .content-inner
 				column-rule 5px solid black
 				font-size 14pt
 				line-height 16pt
+				img
+					z-index 1
+					position relative
+					width 100%
+					display block
+					padding-bottom 20px
 				p
+					background-color rgb(173, 136, 32)
+					position relative
+					z-index 1
+					break-inside avoid
 					margin 0
 					padding 0
 					padding-bottom 20px
@@ -195,7 +216,7 @@ html, body, .content-block, .content-item, .content-inner
 					box-sizing border-box
 					padding 10px
 					padding-bottom 0
-					// margin-bottom 10px
+					margin-bottom 8px
 					&:last-child
 						margin-bottom 0
 					&:nth-child(odd)
