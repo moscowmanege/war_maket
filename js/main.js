@@ -10,6 +10,15 @@ $(function() {
 		return false;
 	});
 
+	var $video = $('.content-item.video');
+	$(document).on('scroll', function() {
+		if ($(this).scrollTop() >= $video.height()) {
+			$('video', $video).trigger('pause').hide();
+		} else {
+			$('video', $video).show().trigger('play');
+		}
+	});
+
 	// Swiper
 
 	var swiperH = new Swiper('.swiper-container-h', {
