@@ -1,21 +1,24 @@
 $(function() {
 
-	$('.menu-items.left').children('.menu-item').on('click', function() {
+	$('.menu-drop').children('.menu-item').on('click', function() {
 		var position = $(this).attr('class').split(' ')[1];
 
 		$('body').animate({
-			'scrollTop': $('.content-item').filter('.' + position).offset().top - 40
+			'scrollTop': $('.content-item').filter('.' + position).offset().top
 		}, 400);
 
 		return false;
 	});
 
 	var $video = $('.content-item.video');
+	var $menu = $('.menu-items');
 	$(document).on('scroll', function() {
 		if ($(this).scrollTop() >= $video.height()) {
 			$('video', $video).trigger('pause').hide();
+			$menu.addClass('fill');
 		} else {
 			$('video', $video).show().trigger('play');
+			$menu.removeClass('fill');
 		}
 	});
 

@@ -17,16 +17,17 @@ html
 		script(type='text/javascript', src='js/main.js')
 		script(type='text/javascript', src='js/g_maps.js')
 	body
-		.menu-block: .menu-inner
+		.menu-block
 			.menu-items.left
-				a.menu-item.main(href='#') Главная
-				a.menu-item.heads(href='#') Цитаты
-				a.menu-item.about(href='#') О выставке
-				a.menu-item.schedule(href='#') Расписание событий
-				a.menu-item.map(href='#') План выставки
-				a.menu-item.contacts(href='#') Как добраться
-			.menu-items.right
-				a.menu-item.locale(href='#') EN
+				.menu-lines
+				.menu-drop
+					a.menu-item.main(href='#') Главная
+					a.menu-item.heads(href='#') Цитаты
+					a.menu-item.about(href='#') О выставке
+					a.menu-item.schedule(href='#') Расписание событий
+					a.menu-item.map(href='#') План выставки
+					a.menu-item.contacts(href='#') Как добраться
+			a.menu-items.right(href='#') en
 
 		.content-block
 

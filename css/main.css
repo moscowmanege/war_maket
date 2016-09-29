@@ -11,46 +11,78 @@ body,
   height: 100%;
 }
 .menu-block {
+  top: 0;
   position: fixed;
   z-index: 9999999;
+}
+.menu-block .menu-items {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+.menu-block .menu-items.fill {
+  background-color: #000;
+}
+.menu-block .menu-items.left {
+  left: 0;
+}
+.menu-block .menu-items.left .menu-lines {
   top: 0;
-  width: 100%;
-  height: 40px;
-  text-shadow: 1px 1px 2px #000, 0 0 1em #000;
-  background-color: rgba(0,0,0,0.6);
-}
-.menu-block .menu-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.menu-block .menu-inner .menu-items {
-  padding-top: 12px;
-}
-.menu-block .menu-inner .menu-items .menu-item {
-  text-transform: uppercase;
-  color: #ad8820;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
-}
-.menu-block .menu-inner .menu-items .menu-item:hover {
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
-  color: #fff;
-}
-.menu-block .menu-inner .menu-items.left {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  border-bottom: 17px double #ad8820;
+  border-top: 6px solid #ad8820;
+  content: "";
+  height: 5px;
+  width: 30px;
   float: left;
 }
-.menu-block .menu-inner .menu-items.left .menu-item {
-  margin-right: 30px;
+.menu-block .menu-items.left:hover {
+  background-color: #ad8820;
 }
-.menu-block .menu-inner .menu-items.right {
-  float: right;
+.menu-block .menu-items.left:hover .menu-lines {
+  border-color: #000;
 }
-.menu-block .menu-inner .menu-items.right .menu-item {
-  margin-left: 30px;
+.menu-block .menu-items.left:hover .menu-drop {
+  display: block;
+}
+.menu-block .menu-items.left .menu-drop {
+  display: none;
+  left: 60px;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #000;
+  width: 170px;
+}
+.menu-block .menu-items.left .menu-drop .menu-item {
+  padding: 10px;
+  text-transform: uppercase;
+  display: block;
+  color: #ad8820;
+  text-decoration: none;
+}
+.menu-block .menu-items.left .menu-drop .menu-item:hover {
+  background-color: #ad8820;
+  color: #000;
+}
+.menu-block .menu-items.right {
+  display: block;
+  top: 60px;
+  left: 0;
+  font-size: 22pt;
+  padding-top: 8pt;
+  font-weight: bold;
+  box-sizing: border-box;
+  color: #ad8820;
+  text-decoration: none;
+  text-align: center;
+}
+.menu-block .menu-items.right:hover {
+  background-color: #ad8820;
+  color: #000;
 }
 .content-block {
   width: 100%;
