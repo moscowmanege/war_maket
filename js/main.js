@@ -41,6 +41,14 @@ $(function() {
 		keyboardControl: true
 	});
 
+	$('.quote-before').on('click', function() {
+		swiperH.slidePrev();
+	});
+
+	$('.quote-after').on('click', function() {
+		swiperH.slideNext();
+	});
+
 	// Leaflet
 
 	var map = L.map('plan-canvas', { scrollWheelZoom: false, zoomControl: false, attributionControl: false }).setView([0, 0], 2);

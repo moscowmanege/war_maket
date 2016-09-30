@@ -275,14 +275,14 @@ body,
   position: relative;
   z-index: 1;
 }
-.content-block .content-item.heads .content-inner .head-item .head-quote:before {
+.content-block .content-item.heads .content-inner .head-item .head-quote .quote-before:before {
   font-size: 62pt;
   line-height: 62pt;
   display: block;
   content: '«';
   margin-left: -40px;
 }
-.content-block .content-item.heads .content-inner .head-item .head-quote:after {
+.content-block .content-item.heads .content-inner .head-item .head-quote .quote-after:after {
   font-size: 62pt;
   line-height: 62pt;
   display: block;
