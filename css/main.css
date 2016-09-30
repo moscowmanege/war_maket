@@ -19,14 +19,18 @@ body,
   width: 60px;
   height: 60px;
   position: absolute;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
 }
 .menu-block .menu-items.fill {
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
   background-color: #000;
 }
-.menu-block .menu-items.left {
+.menu-block .menu-items.main {
   left: 0;
 }
-.menu-block .menu-items.left .menu-lines {
+.menu-block .menu-items.main .menu-lines {
   top: 0;
   left: 0;
   right: 0;
@@ -40,16 +44,16 @@ body,
   width: 30px;
   float: left;
 }
-.menu-block .menu-items.left:hover {
+.menu-block .menu-items.main:hover {
   background-color: #ad8820;
 }
-.menu-block .menu-items.left:hover .menu-lines {
+.menu-block .menu-items.main:hover .menu-lines {
   border-color: #000;
 }
-.menu-block .menu-items.left:hover .menu-drop {
+.menu-block .menu-items.main:hover .menu-drop {
   display: block;
 }
-.menu-block .menu-items.left .menu-drop {
+.menu-block .menu-items.main .menu-drop {
   display: none;
   left: 60px;
   position: absolute;
@@ -57,18 +61,18 @@ body,
   background-color: #000;
   width: 170px;
 }
-.menu-block .menu-items.left .menu-drop .menu-item {
+.menu-block .menu-items.main .menu-drop .menu-item {
   padding: 10px;
   text-transform: uppercase;
   display: block;
   color: #ad8820;
   text-decoration: none;
 }
-.menu-block .menu-items.left .menu-drop .menu-item:hover {
+.menu-block .menu-items.main .menu-drop .menu-item:hover {
   background-color: #ad8820;
   color: #000;
 }
-.menu-block .menu-items.right {
+.menu-block .menu-items.locale {
   display: block;
   top: 60px;
   left: 0;
@@ -80,7 +84,7 @@ body,
   text-decoration: none;
   text-align: center;
 }
-.menu-block .menu-items.right:hover {
+.menu-block .menu-items.locale:hover {
   background-color: #ad8820;
   color: #000;
 }
@@ -104,6 +108,7 @@ body,
   width: 100%;
   background-color: #d3d3d3;
   position: relative;
+  overflow: hidden;
   box-sizing: border-box;
 }
 .content-block .content-item .content-inner {
@@ -163,6 +168,33 @@ body,
   position: absolute;
   z-index: 1;
 }
+.content-block .content-item.main .content-partners {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+.content-block .content-item.main .content-partners a {
+  float: left;
+}
+.content-block .content-item.main .content-partners a span {
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content-block .content-item.main .content-partners .mkrf {
+  display: block;
+  background-color: #fff;
+}
+.content-block .content-item.main .content-partners .mkrf span {
+  background-size: 80%;
+}
+.content-block .content-item.main .content-partners .cult_mos {
+  background-color: #f00;
+}
 .content-block .content-item.heads .content-inner {
   max-width: none;
   width: 100%;
@@ -170,7 +202,7 @@ body,
 }
 .content-block .content-item.heads .content-inner .head-line {
   width: 100%;
-  height: 8px;
+  height: 10px;
   top: 50%;
   left: 0;
   position: absolute;
@@ -244,7 +276,7 @@ body,
 .content-block .content-item.about .content-line {
   max-width: 1280px;
   width: 100%;
-  height: 8px;
+  height: 10px;
   background-color: #ad8820;
   position: absolute;
   z-index: 0;
@@ -305,7 +337,7 @@ body,
   box-sizing: border-box;
   padding: 10px;
   padding-bottom: 0;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .content-block .content-item.schedule .content-schedule .schedule-item:last-child {
   margin-bottom: 0;
