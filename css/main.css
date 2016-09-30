@@ -195,6 +195,12 @@ body,
 .content-block .content-item.main .content-partners .cult_mos {
   background-color: #f00;
 }
+.content-block .content-item.main .content-partners .manege {
+  background-color: #000;
+}
+.content-block .content-item.main .content-partners .manege span {
+  background-size: 80%;
+}
 .content-block .content-item.heads .content-inner {
   max-width: none;
   width: 100%;
