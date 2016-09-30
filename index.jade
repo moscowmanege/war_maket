@@ -20,12 +20,12 @@ html
 		.menu-block
 			.menu-items.main
 				.menu-drop
-					a.menu-item.main(href='#') Главная
-					a.menu-item.heads(href='#') Цитаты
-					a.menu-item.about(href='#') О выставке
-					a.menu-item.schedule(href='#') Расписание событий
-					a.menu-item.plan(href='#') План выставки
-					a.menu-item.contacts(href='#') Как добраться
+					.menu-item.main Главная
+					.menu-item.heads Цитаты
+					.menu-item.about О выставке
+					.menu-item.plan Экспозиция
+					.menu-item.schedule Расписание событий
+					.menu-item.contacts Как добраться
 			a.menu-items.locale(href='#') en
 
 		.content-block
@@ -38,9 +38,9 @@ html
 			.content-item.main
 				img.logo(src='img/logos/main.svg')
 				.content-partners
-					a.manege(href='http://moscowmanege.ru', target='_blank'): span(style='background-image: url(img/logos/manege.svg)')
 					a.mkrf(href='http://mkrf.ru', target='_blank'): span(style='background-image: url(img/logos/mkrf.png)')
 					a.cult_mos(href='http://cult.mos.ru', target='_blank'): span(style='background-image: url(img/logos/cult_mos.svg)')
+					a.manege(href='http://moscowmanege.ru', target='_blank'): span(style='background-image: url(img/logos/manege.svg)')
 
 			.content-item.heads: .content-inner
 				.swiper-container.swiper-container-h
@@ -85,6 +85,11 @@ html
 					img(src='img/about/ab1.png')
 					p Частицы с полуцелым спином другие. Чтобы частица со спином ½ вернула свое состояние, ее нужно повернуть вокруг своей оси два раза — эта частица асимметрична. Такие частицы не могут занимать более одного состояния на частицу — они как бы избегают друг друга. Но не сложно сообразить, что если две такие частицы все же образуют пару, то их суммарный спин неизбежно образует целый спин. А значит, пары могут вести себя подобно бозонам. Действительно, так и происходит, подобный механизм лежит в основе явления сверхпроводимости и сверхтекучести.
 
+			.content-item.plan
+				#plan-canvas
+				.content-inner
+					.content-title!= getDash('Экспозиция')
+
 			.content-item.schedule: .content-inner
 				.content-title!= getDash('Расписание событий')
 				.content-schedule
@@ -128,12 +133,6 @@ html
 							.schedule-event
 								.event-title Священная война
 								.event-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-			.content-item.plan
-				#plan-canvas
-				.content-inner
-					.content-title!= getDash('План выставки')
 
 			.content-item.contacts
 				#map-canvas

@@ -6,8 +6,12 @@ $(function() {
 		$('body').animate({
 			'scrollTop': $('.content-item').filter('.' + position).offset().top
 		}, 400);
+	});
 
-		return false;
+	$('.content-title').on('click', function() {
+		$('body').animate({
+			'scrollTop': $(this).closest('.content-item').offset().top
+		}, 400);
 	});
 
 	var $video = $('.content-item.video');

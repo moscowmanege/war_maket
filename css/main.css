@@ -66,7 +66,7 @@ body,
   text-transform: uppercase;
   display: block;
   color: #ad8820;
-  text-decoration: none;
+  cursor: default;
 }
 .menu-block .menu-items.main .menu-drop .menu-item:hover {
   background-color: #ad8820;
@@ -125,6 +125,7 @@ body,
   text-transform: uppercase;
   margin-bottom: 40px;
   max-width: 320px;
+  cursor: pointer;
 }
 .content-block .content-item .content-inner .content-title span {
   display: inline-block;
