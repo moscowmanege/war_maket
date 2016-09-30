@@ -244,19 +244,26 @@ html, body, .content-block, .content-item, .content-inner
 						text-transform uppercase
 						position relative
 						z-index 1
-						// color rgb(173, 136, 32)
+						.quote-before
+						.quote-after
+							width 0
+							&:hover
+								&:before
+								&:after
+									color rgb(173, 136, 32)
+						.quote-after
+							position absolute
+							right 0
 						.quote-before:before
 							font-size 62pt
 							line-height 62pt
-							display block
+							display inline-block
 							content '«'
 							margin-left -40px
 						.quote-after:after
 							font-size 62pt
 							line-height 62pt
-							display block
-							position relative
-							left 100%
+							display inline-block
 							content '»'
 
 		&.plan
