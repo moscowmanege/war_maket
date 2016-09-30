@@ -14,14 +14,15 @@ $(function() {
 		}, 400);
 	});
 
-	var $video = $('.content-item.video');
+	var $content_video = $('.content-item.video');
+	var $player = $content_video.children('video');
 	var $menu = $('.menu-items');
 	$(document).on('scroll', function() {
-		if ($(this).scrollTop() >= $video.height()) {
-			$('video', $video).trigger('pause').hide();
+		if ($(this).scrollTop() >= $content_video.height()) {
+			if (!$player.is(':hidden')) $player.trigger('pause').hide();
 			$menu.addClass('fill');
 		} else {
-			$('video', $video).show().trigger('play');
+			if ($player.is(':hidden')) $player.show().trigger('play');
 			$menu.removeClass('fill');
 		}
 	});
