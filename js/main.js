@@ -8,7 +8,7 @@ $(function() {
 		}, 400);
 	});
 
-	$('.content-title').on('click', function() {
+	$('.content-title, .head-name').on('click', function() {
 		$('body').animate({
 			'scrollTop': $(this).closest('.content-item').offset().top
 		}, 400);

@@ -125,7 +125,11 @@ body,
   text-transform: uppercase;
   margin-bottom: 40px;
   max-width: 320px;
-  cursor: pointer;
+}
+.content-block .content-item .content-inner .content-title:hover span {
+  cursor: default;
+  background-color: #fff;
+  color: #ad8820;
 }
 .content-block .content-item .content-inner .content-title span {
   display: inline-block;
@@ -240,6 +244,11 @@ body,
   box-sizing: border-box;
   text-transform: uppercase;
   max-width: 320px;
+}
+.content-block .content-item.heads .content-inner .head-item .head-name:hover span {
+  cursor: default;
+  background-color: #fff;
+  color: #ad8820;
 }
 .content-block .content-item.heads .content-inner .head-item .head-name span {
   display: inline-block;
