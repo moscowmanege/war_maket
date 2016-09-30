@@ -9,8 +9,15 @@ $(function() {
 	});
 
 	$('.content-title, .head-name').on('click', function() {
+		var $this = $(this);
+
+		if ($this.hasClass('head-name')) {
+			var index = $this.index('.head-name');
+			swiperH.slideTo(index, 400);
+		}
+
 		$('body').animate({
-			'scrollTop': $(this).closest('.content-item').offset().top
+			'scrollTop': $this.closest('.content-item').offset().top
 		}, 400);
 	});
 
