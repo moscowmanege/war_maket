@@ -24,22 +24,22 @@ html, body, .content-block, .content-item, .content-inner
 
 		&.main
 			left 0
-			.menu-lines
+			&:after
 				top 0
 				left 0
 				right 0
 				bottom 0
 				position absolute
 				margin auto
-				border-bottom: 17px double rgb(173, 136, 32);
-				border-top: 6px solid rgb(173, 136, 32);
-				content:"";
-				height: 5px;
-				width: 30px;
+				border-bottom 17px double rgb(173, 136, 32)
+				border-top 6px solid rgb(173, 136, 32)
+				content ''
+				height 5px
+				width 30px
 				float left
 			&:hover
 				background-color rgb(173, 136, 32);
-				.menu-lines
+				&:after
 					border-color black
 				.menu-drop
 					display block
