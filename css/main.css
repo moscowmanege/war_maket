@@ -1,3 +1,9 @@
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
 html,
 body {
   margin: 0;
@@ -141,23 +147,23 @@ body,
   margin-bottom: 3px;
 }
 .content-block .content-item.video {
-  position: fixed;
-  background-color: #000;
+  width: 100%;
   height: 100%;
-  overflow: hidden;
-}
-.content-block .content-item.video video {
+  position: fixed;
   overflow: hidden;
   z-index: 0;
-  position: fixed;
+  background-color: #000;
+}
+.content-block .content-item.video video {
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .content-block .content-item.main {
   background-color: transparent;
