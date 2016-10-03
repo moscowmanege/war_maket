@@ -21,6 +21,21 @@ $(function() {
 		}, 400);
 	});
 
+	$(document).on('click', '.preview-image', function() {
+		var path = $(this).attr('path');
+		$('.content-preview-image').addClass('active').children('.preview-inner').css('background-image', 'url(' + path + ')');
+	});
+
+	$(document).on('click', '.content-preview-image', function() {
+		$(this).removeClass('active');
+	});
+
+	$(window).on('resize', function() {
+		var height = $('.content-item.plan').height();
+		$('.content-preview-image').height(height - 80);
+		$('.preview-body').height(height - 280);
+	}).trigger('resize');
+
 	var $content_video = $('.content-item.video');
 	var $player = $content_video.children('video');
 	var $menu = $('.menu-items');
