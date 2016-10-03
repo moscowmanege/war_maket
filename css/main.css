@@ -47,15 +47,15 @@ p {
   bottom: 0;
   position: absolute;
   margin: auto;
-  border-bottom: 17px double #ad8820;
-  border-top: 6px solid #ad8820;
+  border-bottom: 17px double #867550;
+  border-top: 6px solid #867550;
   content: '';
   height: 5px;
   width: 30px;
   float: left;
 }
 .menu-block .menu-items.main:hover {
-  background-color: #ad8820;
+  background-color: #867550;
 }
 .menu-block .menu-items.main:hover:after {
   border-color: #000;
@@ -75,11 +75,11 @@ p {
   padding: 10px;
   text-transform: uppercase;
   display: block;
-  color: #ad8820;
+  color: #867550;
   cursor: default;
 }
 .menu-block .menu-items.main .menu-drop .menu-item:hover {
-  background-color: #ad8820;
+  background-color: #867550;
   color: #000;
 }
 .menu-block .menu-items.locale {
@@ -90,12 +90,12 @@ p {
   padding-top: 8pt;
   font-weight: bold;
   box-sizing: border-box;
-  color: #ad8820;
+  color: #867550;
   text-decoration: none;
   text-align: center;
 }
 .menu-block .menu-items.locale:hover {
-  background-color: #ad8820;
+  background-color: #867550;
   color: #000;
 }
 .content-block {
@@ -106,7 +106,7 @@ p {
   width: 100%;
   height: 120px;
   position: relative;
-  color: #ad8820;
+  color: #867550;
 }
 .content-block .content-footer .footer-inner {
   max-width: 1280px;
@@ -129,7 +129,7 @@ p {
 }
 .content-block .content-item .content-inner .content-title {
   font-size: 24pt;
-  color: #ad8820;
+  color: #867550;
   display: inline-block;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -139,7 +139,7 @@ p {
 .content-block .content-item .content-inner .content-title:hover span {
   cursor: default;
   background-color: #fff;
-  color: #ad8820;
+  color: #867550;
 }
 .content-block .content-item .content-inner .content-title span {
   display: inline-block;
@@ -178,7 +178,7 @@ p {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 80%;
+  width: 65%;
   display: block;
   position: absolute;
   z-index: 1;
@@ -258,11 +258,11 @@ p {
 .content-block .content-item.heads .content-inner .head-item .head-name:hover span {
   cursor: default;
   background-color: #fff;
-  color: #ad8820;
+  color: #867550;
 }
 .content-block .content-item.heads .content-inner .head-item .head-name span {
   display: inline-block;
-  background-color: #ad8820;
+  background-color: #867550;
   padding: 2px;
   padding-left: 10px;
   padding-right: 10px;
@@ -276,7 +276,7 @@ p {
   line-height: 12pt;
   max-width: 320px;
   text-transform: uppercase;
-  color: #ad8820;
+  color: #867550;
 }
 .content-block .content-item.heads .content-inner .head-item .head-quote {
   font-size: 14pt;
@@ -293,7 +293,7 @@ p {
 .content-block .content-item.heads .content-inner .head-item .head-quote .quote-after:hover:before,
 .content-block .content-item.heads .content-inner .head-item .head-quote .quote-before:hover:after,
 .content-block .content-item.heads .content-inner .head-item .head-quote .quote-after:hover:after {
-  color: #ad8820;
+  color: #867550;
 }
 .content-block .content-item.heads .content-inner .head-item .head-quote .quote-after {
   position: absolute;
@@ -365,7 +365,7 @@ p {
 .content-block .content-item.about {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #ad8820;
+  background-color: #867550;
   height: auto;
 }
 .content-block .content-item.about .content-inner:before,
@@ -374,7 +374,7 @@ p {
   max-width: 1280px;
   width: 100%;
   height: 10px;
-  background-color: #ad8820;
+  background-color: #867550;
   position: absolute;
   z-index: 0;
 }
@@ -408,7 +408,7 @@ p {
   padding-bottom: 20px;
 }
 .content-block .content-item.about .content-inner .content-columns p {
-  background-color: #ad8820;
+  background-color: #867550;
   position: relative;
   z-index: 1;
   -webkit-column-break-inside: avoid;
