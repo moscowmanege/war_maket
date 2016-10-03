@@ -102,8 +102,21 @@ html
 
 			.content-item.plan
 				#plan-canvas
-				.content-inner
+				.content-inner.active
 					.content-title!= getDash('Экспозиция')
+					.content-preview-image
+					.content-preview-column
+						.preview-images
+							.swiper-container.swiper-container-h
+								.swiper-pagination.swiper-pagination-h
+								.swiper-wrapper
+									.swiper-slide(style='background-image: url(img/about/ab1.png)')
+									.swiper-slide(style='background-image: url(img/about/ab2.png)')
+						.preview-title МОСКВА В ОСАДЕ
+						.preview-description
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 			.content-item.schedule: .content-inner
 				.content-title!= getDash('Расписание событий')
