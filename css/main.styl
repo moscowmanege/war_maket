@@ -111,8 +111,8 @@ p
 			&:before
 			&:after
 				content ''
-				width 5px
-				height 5px
+				width 10px
+				height 10px
 				background-color black
 				position absolute
 				top 0
@@ -390,19 +390,19 @@ p
 			background-color main-color
 			height auto
 			.content-inner
-				// &:before
-				// &:after
-				// 	content ''
-				// 	max-width 1280px
-				// 	width 100%
-				// 	height 10px
-				// 	background-color main-color
-				// 	position absolute
-				// 	z-index 0
-				// &:before
-				// 	top 37%
-				// &:after
-				// 	bottom 33%
+				&:before
+				&:after
+					content ''
+					max-width 1280px
+					width 100%
+					height 10px
+					background-color main-color
+					position absolute
+					z-index 0
+				&:before
+					top 37%
+				&:after
+					bottom 33%
 				.content-columns
 					hyphens auto
 					columns 4 320px
@@ -418,9 +418,9 @@ p
 						padding-bottom 20px
 					p
 						background-color main-color
-						// position relative
-						// z-index 1
-						// break-inside avoid
+						position relative
+						z-index 1
+						break-inside avoid
 						padding-bottom 20px
 
 		&.schedule
@@ -463,22 +463,7 @@ p
 						.event-description
 							font-size 12pt
 							line-height 14pt
-
-		&.partners
-			padding-top 40px
-			padding-bottom 40px
-			background-color black
-			height auto
-			color main-color
-			.content-inner
-				.content-partners-columns
-					hyphens auto
-					column-width 200px
-					column-gap 2em
-					p
-						break-inside avoid
-						padding-bottom 20px
-
+							hyphens auto
 
 		&.contacts
 			padding-top 40px
@@ -504,6 +489,21 @@ p
 					p
 						padding-bottom 20px
 
+		&.partners
+			padding-top 40px
+			padding-bottom 40px
+			background-color black
+			height auto
+			color main-color
+			.content-inner
+				.content-partners-columns
+					hyphens auto
+					column-width 200px
+					column-gap 2em
+					p
+						break-inside avoid
+						padding-bottom 20px
+
 
 // Old Block
 
@@ -523,6 +523,9 @@ p
 
 #map-canvas .info-window
 	max-width 420px
+	h2
+		margin 0!important
+
 
 .leaflet-container
 	background-color black!important
