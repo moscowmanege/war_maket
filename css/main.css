@@ -556,18 +556,6 @@ p {
   background-color: #fff;
   color: #867550;
 }
-.content-block .content-item.contacts .content-inner .content-box {
-  width: 380px;
-  height: 480px;
-  float: right;
-  color: #fff;
-  padding: 10px;
-  box-sizing: border-box;
-  background-color: rgba(0,0,0,0.6);
-}
-.content-block .content-item.contacts .content-inner .content-box p {
-  padding-bottom: 20px;
-}
 .content-block .content-item.partners {
   padding-top: 40px;
   padding-bottom: 40px;
