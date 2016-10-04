@@ -9,12 +9,14 @@ html
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
 		link(rel='stylesheet', type='text/css', href='css/main.css')
 		link(rel='stylesheet', type='text/css', href='css/mobile.css')
-		link(rel='stylesheet', type='text/css', href='css/swiper.min.css')
-		link(rel='stylesheet', type='text/css', href='css/leaflet.css')
+		link(rel='stylesheet', type='text/css', href='css/libs/swiper.min.css')
+		link(rel='stylesheet', type='text/css', href='css/libs/jquery.scrollbar.css')
+		link(rel='stylesheet', type='text/css', href='css/libs/leaflet.css')
 		script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?sensor=false')
-		script(type='text/javascript', src='js/jquery-2.2.4.min.js')
-		script(type='text/javascript', src='js/swiper.jquery.min.js')
-		script(type='text/javascript', src='js/leaflet.js')
+		script(type='text/javascript', src='js/libs/jquery-2.2.4.min.js')
+		script(type='text/javascript', src='js/libs/swiper.jquery.min.js')
+		script(type='text/javascript', src='js/libs/jquery.scrollbar.min.js')
+		script(type='text/javascript', src='js/libs/leaflet.js')
 		script(type='text/javascript', src='js/main.js')
 		script(type='text/javascript', src='js/g_maps.js')
 	body
@@ -48,45 +50,11 @@ html
 					.swiper-pagination.swiper-pagination-h
 					.swiper-wrapper
 
-						.swiper-slide.head-item
-							.head-name!= getDash('Александр Кибовский')
-							.head-status Руководитель департамента культуры города Москвы
-							.head-quote
-								.quote-before
-								.quote-content Если возьмете себестоимость постановки, включающей в себя всё — начиная от коммунальных расходов, свет в зале, охрану и заканчивая зарплатой артистов и музыкантов, которые дарят действо, — то в среднем мы дотируем 80% стоимости билета. То есть вы платите в кассу только 20% от реальной стоимости этого билета...
-								.quote-after
-
-						.swiper-slide.head-item
-							.head-name!= getDash('Александр Кибовский')
-							.head-status Руководитель департамента культуры города Москвы
-							.head-quote
-								.quote-before
-								.quote-content Если возьмете себестоимость постановки, включающей в себя всё — начиная от коммунальных расходов, свет в зале, охрану и заканчивая зарплатой артистов и музыкантов, которые дарят действо, — то в среднем мы дотируем 80% стоимости билета. То есть вы платите в кассу только 20% от реальной стоимости этого билета...
-								.quote-after
-
-						.swiper-slide.head-item
-							.head-name!= getDash('Александр Кибовский')
-							.head-status Руководитель департамента культуры города Москвы
-							.head-quote
-								.quote-before
-								.quote-content Если возьмете себестоимость постановки, включающей в себя всё — начиная от коммунальных расходов, свет в зале, охрану и заканчивая зарплатой артистов и музыкантов, которые дарят действо, — то в среднем мы дотируем 80% стоимости билета. То есть вы платите в кассу только 20% от реальной стоимости этого билета...
-								.quote-after
-
-						.swiper-slide.head-item
-							.head-name!= getDash('Александр Кибовский')
-							.head-status Руководитель департамента культуры города Москвы
-							.head-quote
-								.quote-before
-								.quote-content Если возьмете себестоимость постановки, включающей в себя всё — начиная от коммунальных расходов, свет в зале, охрану и заканчивая зарплатой артистов и музыкантов, которые дарят действо, — то в среднем мы дотируем 80% стоимости билета. То есть вы платите в кассу только 20% от реальной стоимости этого билета...
-								.quote-after
-
-						.swiper-slide.head-item
-							.head-name!= getDash('Александр Кибовский')
-							.head-status Руководитель департамента культуры города Москвы
-							.head-quote
-								.quote-before
-								.quote-content Если возьмете себестоимость постановки, включающей в себя всё — начиная от коммунальных расходов, свет в зале, охрану и заканчивая зарплатой артистов и музыкантов, которые дарят действо, — то в среднем мы дотируем 80% стоимости билета. То есть вы платите в кассу только 20% от реальной стоимости этого билета...
-								.quote-after
+						each quote in new Array(5)
+							.swiper-slide.head-item
+								.head-name!= getDash('Александр Кибовский')
+								.head-status Руководитель департамента культуры города Москвы
+								.head-quote Если возьмете себестоимость постановки, включающей в себя всё — начиная от коммунальных расходов, свет в зале, охрану и заканчивая зарплатой артистов и музыкантов, которые дарят действо, — то в среднем мы дотируем 80% стоимости билета. То есть вы платите в кассу только 20% от реальной стоимости этого билета...
 
 			.content-item.about: .content-inner
 				.content-title!= getDash('О выставке')
@@ -112,7 +80,7 @@ html
 								.swiper-wrapper
 									.swiper-slide.preview-image(path='img/about/ab1.png', style='background-image: url(img/about/ab1.png)')
 									.swiper-slide.preview-image(path='img/about/ab2.png', style='background-image: url(img/about/ab2.png)')
-						.preview-body
+						.preview-body: .preview-body-inner
 							.preview-title МОСКВА В ОСАДЕ
 							.preview-description
 								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
