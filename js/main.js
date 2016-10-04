@@ -7,11 +7,13 @@ $(function() {
 		paginationClickable: true,
 		slidesPerView: 'auto',
 		// autoHeight: true,
-		initialSlide: Math.ceil(($('.swiper-slide').length / 2) - 1),
+		initialSlide: 1,
 		centeredSlides: true,
 		spaceBetween: 0,
 		direction: 'horizontal',
-		keyboardControl: true
+		keyboardControl: true,
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev'
 	});
 
 	// Leaflet
@@ -55,23 +57,66 @@ $(function() {
 
 	$(document).on('mousemove', '.preview-body', function(event) {
 		var $this = $(this);
-		var percent = (event.pageY - $this.offset().top) / $this.height() * 1.1 - 0.30;
+		var percent = (event.pageY - $this.offset().top) / $this.height() * 1.1 - 0.10;
 		$this.scrollTop($this.children('.preview-body-inner').height() * percent);
 	});
 
+
+	var requestId;
+	var deltaY = 0;
+	var deltaX = 0;
+	var $preview = $('.preview-inner');
 	$(document).on('click', '.preview-image', function() {
 		var path = $(this).attr('path');
+		var $image = $('<img>', { 'src': path, 'onmousedown': 'return false' });
 
 		$('body').animate({
 			'scrollTop': $('.content-item.plan').offset().top
 		}, 400);
 
-		$('.content-preview-image').addClass('active').children('.preview-inner').css('background-image', 'url(' + path + ')');
+		$('.content-preview-image').trigger('click').addClass('active').children('.preview-inner').append($image);
+
+
+		var h = $preview[0].scrollHeight;
+		var w = $preview[0].scrollWidth;
+
+		deltaY = 0;
+		deltaX = 0;
+
+		$preview
+			.off()
+			.on('mousemove', function(e) {
+				var parentOffset = $(this).parent().offset();
+
+				var y = (e.pageY - parentOffset.top) - h / 2;
+				deltaY = y * 0.025;
+
+				var x = (e.pageX - parentOffset.left) - w / 2;
+				deltaX = x * 0.025;
+			})
+			.on('blur mouseleave', function(e) {
+				deltaX = 0;
+				deltaY = 0;
+			});
+
+		cancelAnimationFrame(requestId);
+		(function step() {
+			deltaY && $preview.scrollTop(function(i, v) { return v + deltaY; });
+			deltaX && $preview.scrollLeft(function(i, v) { return v + deltaX; });
+
+			requestId = requestAnimationFrame(step);
+		})();
+
 	});
 
 	$(document).on('click', '.content-preview-image', function() {
-		$(this).removeClass('active');
+		$(this).removeClass('active').children('.preview-inner').empty();
+		$preview.off();
+
+		cancelAnimationFrame(requestId);
 	});
+
+
 
 	$(window).on('resize', function() {
 		var height = $('.content-item.plan').height();
