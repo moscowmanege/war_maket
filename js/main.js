@@ -87,6 +87,13 @@ $(function() {
 	});
 
 
+	$(document).on('keyup', function(event) {
+		if (event.altKey && (event.which = 81)) {
+			$('.content-item.plan').children('.content-inner').toggleClass('active');
+			$('.content-preview-image').removeClass('active');
+		}
+	});
+
 
 	$(window).on('resize', function() {
 		var height = $('.content-item.plan').height();
