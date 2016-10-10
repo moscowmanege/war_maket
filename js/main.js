@@ -119,10 +119,10 @@ $(function() {
 	var $menu = $('.menu-items');
 	$(document).on('scroll', function(event) {
 		if ($(this).scrollTop() >= $content_video.height()) {
-			if (!$player.is(':hidden')) $player.trigger('pause').hide();
+			if (!$player.hasClass('hidden')) $player.trigger('pause').addClass('hidden');
 			$menu.addClass('fill');
 		} else {
-			if ($player.is(':hidden')) $player.show().trigger('play');
+			if ($player.hasClass('hidden')) $player.removeClass('hidden').trigger('play');
 			$menu.removeClass('fill');
 		}
 	});

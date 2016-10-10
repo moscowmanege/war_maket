@@ -200,6 +200,9 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.content-block .content-item.video video.hidden {
+  display: none;
+}
 .content-block .content-item.main {
   background-color: transparent;
 }
