@@ -72,11 +72,17 @@ $(function() {
 		}, 400);
 
 		$('.content-preview-image').addClass('active').children('.preview-inner').append($image).scrollTop(0).scrollLeft(10000);
+		$('.content-preview-column').removeClass('active');
 	});
 
 
 	$(document).on('click', '.content-preview-image', function(event) {
 		$(this).removeClass('active').children('.preview-inner').empty();
+	});
+
+	$(document).on('click', '.preview-description', function(event) {
+		$('.content-preview-column').toggleClass('active');
+		$('.content-preview-image').removeClass('active');
 	});
 
 

@@ -46,11 +46,21 @@
 		.content-preview-column
 			display none
 			margin-top 40px
-			width 380px
+			width 100%
+			max-width 380px
 			background-color white
 			position absolute
 			right 40px
 			top 0
+			transition .2s ease-out
+			&.active
+				transition .2s ease-in
+				max-width 1280px
+				.preview-title
+					font-size 24pt
+				.preview-description
+					font-size 14pt
+					line-height 16pt
 			.preview-images
 				background-color white
 				.swiper-button-prev

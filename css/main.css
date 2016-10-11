@@ -389,11 +389,26 @@ p {
 .content-block .content-item.plan .content-inner .content-preview-column {
   display: none;
   margin-top: 40px;
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   background-color: #fff;
   position: absolute;
   right: 40px;
   top: 0;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.content-block .content-item.plan .content-inner .content-preview-column.active {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  max-width: 1280px;
+}
+.content-block .content-item.plan .content-inner .content-preview-column.active .preview-title {
+  font-size: 24pt;
+}
+.content-block .content-item.plan .content-inner .content-preview-column.active .preview-description {
+  font-size: 14pt;
+  line-height: 16pt;
 }
 .content-block .content-item.plan .content-inner .content-preview-column .preview-images {
   background-color: #fff;
