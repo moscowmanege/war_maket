@@ -19,24 +19,6 @@ $(function() {
 	});
 
 
-	// Leaflet Block
-
-
-	var map = L.map('plan-canvas', { scrollWheelZoom: false, zoomControl: false, attributionControl: false }).setView([0, 0], 2);
-
-	L.tileLayer('img/tiles/{z}/image_tile_{y}_{x}.jpg', {
-		minZoom: 1,
-		maxZoom: 4,
-		attribution: '',
-		tileSize: '256',
-		tms: false,
-		continuousWorld: true,
-		reuseTiles: true
-	}).addTo(map);
-
-	L.control.zoom({ position: 'bottomleft' }).addTo(map);
-
-
 	// Main Block
 
 
