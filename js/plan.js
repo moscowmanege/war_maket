@@ -109,6 +109,8 @@ $(document).ready(function() {
 		});
 	});
 
+	var themes_group = L.layerGroup([layer_war, layer_city, layer_memory]);
+
 
 	// Layer Halls
 
@@ -141,13 +143,7 @@ $(document).ready(function() {
 	}).addTo(map);
 
 	var baseMaps = {
-		'Война': layer_war,
-		'Город': layer_city,
-		'Память': layer_memory,
-		'Залы': layer_halls
-	};
-
-	var overlayMaps = {
+		'Темы': themes_group,
 		'Залы': layer_halls
 	};
 
