@@ -88,7 +88,7 @@ $(function() {
 
 
 	$(document).on('mouseup touchend', function(event) {
-		if ($(event.target).closest('.content-preview-column, .content-preview-image').length || event.target.className.baseVal == 'leaflet-clickable') return;
+		if ($(event.target).closest('.content-preview-column, .content-preview-image, .content-title').length || event.target.className.baseVal == 'leaflet-clickable') return;
 
 		$('.content-item.plan').children('.content-inner').removeClass('active');
 		$('.content-preview-image').removeClass('active');
