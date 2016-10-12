@@ -395,20 +395,28 @@ p {
   position: absolute;
   right: 40px;
   top: 0;
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 .content-block .content-item.plan .content-inner .content-preview-column.active {
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
   max-width: 1280px;
 }
 .content-block .content-item.plan .content-inner .content-preview-column.active .preview-title {
   font-size: 24pt;
 }
 .content-block .content-item.plan .content-inner .content-preview-column.active .preview-description {
-  font-size: 14pt;
-  line-height: 16pt;
+  -webkit-columns: 4 320px;
+     -moz-columns: 4 320px;
+          columns: 4 320px;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+  -webkit-column-rule: 5px solid #000;
+     -moz-column-rule: 5px solid #000;
+          column-rule: 5px solid #000;
+  margin-bottom: 40px;
 }
 .content-block .content-item.plan .content-inner .content-preview-column .preview-images {
   background-color: #fff;
@@ -459,7 +467,7 @@ p {
   line-height: 36px;
 }
 .content-block .content-item.plan .content-inner .content-preview-column .preview-body {
-  cursor: ns-resize;
+  cursor: pointer;
   overflow: hidden;
   height: 380px;
   background-color: #fff;

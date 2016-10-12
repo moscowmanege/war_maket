@@ -39,6 +39,9 @@ $(document).ready(function() {
 	})
 	.on('click', function(e) {
 		map.setView(e.latlng);
+
+		$('.content-item.plan').children('.content-inner').addClass('active');
+		$('.content-preview-image').removeClass('active');
 	})
 	.on('mouseover', function(e) {
 		this.setStyle({
@@ -67,6 +70,9 @@ $(document).ready(function() {
 	})
 	.on('click', function(e) {
 		map.setView(e.latlng);
+
+		$('.content-item.plan').children('.content-inner').addClass('active');
+		$('.content-preview-image').removeClass('active');
 	})
 	.on('mouseover', function(e) {
 		this.setStyle({
@@ -95,6 +101,9 @@ $(document).ready(function() {
 	})
 	.on('click', function(e) {
 		map.setView(e.latlng);
+
+		$('.content-item.plan').children('.content-inner').addClass('active');
+		$('.content-preview-image').removeClass('active');
 	})
 	.on('mouseover', function(e) {
 		this.setStyle({
@@ -136,7 +145,9 @@ $(document).ready(function() {
 
 			layer.on('click', function(e) {
 				map.setView(e.latlng);
-				// alert(feature.properties.description);
+
+				$('.content-item.plan').children('.content-inner').addClass('active');
+				$('.content-preview-image').removeClass('active');
 			});
 
 		}

@@ -80,18 +80,21 @@ $(function() {
 		$(this).removeClass('active').children('.preview-inner').empty();
 	});
 
-	$(document).on('click', '.preview-description', function(event) {
+
+	$(document).on('click', '.preview-body-inner', function(event) {
 		$('.content-preview-column').toggleClass('active');
 		$('.content-preview-image').removeClass('active');
 	});
 
 
-	// $(document).on('keyup', function(event) {
-	// 	if (event.altKey && (event.which = 81)) {
-	// 		$('.content-item.plan').children('.content-inner').toggleClass('active');
-	// 		$('.content-preview-image').removeClass('active');
-	// 	}
-	// });
+	$(document).on('mouseup touchend', function(event) {
+		if ($(event.target).closest('.content-preview-column, .content-preview-image').length || event.target.className.baseVal == 'leaflet-clickable') return;
+
+		$('.content-item.plan').children('.content-inner').removeClass('active');
+		$('.content-preview-image').removeClass('active');
+
+		event.stopPropagation();
+	});
 
 
 	$(window).on('resize', function(event) {
