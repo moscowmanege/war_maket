@@ -68,7 +68,7 @@ $(document).ready(function() {
 			});
 
 			layer.on('click', function(e) {
-				$('.content-item.plan').children('.content-inner').addClass('active');
+				$('.content-preview-column').addClass('active');
 				$('.content-preview-image').removeClass('active');
 
 				map.setView(e.latlng);
@@ -90,7 +90,7 @@ $(document).ready(function() {
 		}
 	})
 	.on('click', function(e) {
-		$('.content-item.plan').children('.content-inner').addClass('active');
+		$('.content-preview-column').addClass('active');
 		$('.content-preview-image').removeClass('active');
 
 		map.setView(e.latlng);
@@ -121,7 +121,7 @@ $(document).ready(function() {
 		}
 	})
 	.on('click', function(e) {
-		$('.content-item.plan').children('.content-inner').addClass('active');
+		$('.content-preview-column').addClass('active');
 		$('.content-preview-image').removeClass('active');
 
 		map.setView(e.latlng);
@@ -152,7 +152,7 @@ $(document).ready(function() {
 		}
 	})
 	.on('click', function(e) {
-		$('.content-item.plan').children('.content-inner').addClass('active');
+		$('.content-preview-column').addClass('active');
 		$('.content-preview-image').removeClass('active');
 
 		map.setView(e.latlng);
@@ -196,7 +196,7 @@ $(document).ready(function() {
 			});
 
 			layer.on('click', function(e) {
-				$('.content-item.plan').children('.content-inner').addClass('active');
+				$('.content-preview-column').addClass('active');
 				$('.content-preview-image').removeClass('active');
 
 				map.setView(e.latlng);

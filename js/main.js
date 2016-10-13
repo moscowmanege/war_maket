@@ -11,7 +11,7 @@ $(function() {
 		// autoHeight: true,
 		initialSlide: 1,
 		centeredSlides: true,
-		spaceBetween: 0,
+		spaceBetween: 5,
 		direction: 'horizontal',
 		keyboardControl: true,
 		nextButton: '.swiper-button-next',
@@ -67,12 +67,12 @@ $(function() {
 		var path = $(this).attr('path');
 		var $image = $('<img>', { 'src': path, 'onmousedown': 'return false' });
 
-		$('body').animate({
-			'scrollTop': $('.content-item.plan').offset().top
-		}, 400);
-
 		$('.content-preview-image').addClass('active').children('.preview-inner').append($image).scrollTop(0).scrollLeft(10000);
-		$('.content-preview-column').removeClass('active');
+		$('.content-preview-column').removeClass('open');
+
+		$('body').animate({'scrollTop': $('.content-item.plan').offset().top }, 400);
+
+		swiperH[1].update(true);
 	});
 
 
@@ -82,16 +82,20 @@ $(function() {
 
 
 	$(document).on('click', '.preview-body-inner', function(event) {
-		$('.content-preview-column').toggleClass('active');
+		$('.content-preview-column').toggleClass('open');
 		$('.content-preview-image').removeClass('active');
+
+		$('body').animate({'scrollTop': $('.content-item.plan').offset().top }, 400);
+
+		swiperH[1].update(true);
 	});
 
 
 	$(document).on('mouseup touchend', function(event) {
 		if ($(event.target).closest('.content-preview-column, .content-preview-image, .content-title').length || event.target.className.baseVal == 'leaflet-clickable') return;
 
-		$('.content-item.plan').children('.content-inner').removeClass('active');
 		$('.content-preview-image').removeClass('active');
+		$('.content-preview-column').removeClass('active open');
 
 		event.stopPropagation();
 	});

@@ -4,13 +4,9 @@
 		position relative
 		z-index 999
 		.content-title
-			margin-top 40px
-		&.active
-			.content-title
-				position absolute
-				z-index 99
-			.content-preview-column
-				display block
+			position absolute
+			top 40px
+			z-index 99
 		.content-preview-image
 			display none
 			top 40px
@@ -18,7 +14,7 @@
 			padding-right 380px
 			height 580px
 			position relative
-			background-color white
+			background-color black
 			box-sizing border-box
 			.preview-inner
 				width 100%
@@ -48,25 +44,32 @@
 			margin-top 40px
 			width 100%
 			max-width 380px
-			background-color white
 			position absolute
 			right 40px
 			top 0
-			transition .3s ease-out
+			// transition .3s ease-out
 			&.active
-				transition .3s ease-in
-				max-width 1280px
+				display block
+			&.open
+				// transition .3s ease-in
+				// max-width 1280px
+				position relative
+				max-width none
+				left 0
+				right 0
 				.preview-body
 					cursor zoom-out
 				.preview-title
 					font-size 24pt
 				.preview-description
 					columns 4 320px
-					column-gap 2em
+					column-gap 3em
 					column-rule 5px solid black
-					margin-bottom 40px
+					margin-bottom 20px
 			.preview-images
-				background-color white
+				background-color rgba(0, 0, 0, 0.8)
+				.preview-image
+					max-width 430px
 				.swiper-button-prev
 				.swiper-button-next
 					top auto!important

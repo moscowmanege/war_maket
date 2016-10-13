@@ -261,12 +261,13 @@ p {
   max-width: 640px;
   padding: 40px;
   padding-right: 60px;
-  padding-left: 60px;
+  padding-left: 55px;
   box-sizing: border-box;
   border-right: 5px solid #000;
   cursor: default;
 }
 .content-block .content-item.heads .content-inner .head-item:first-child {
+  padding-left: 60px;
   border-left: 5px solid #000;
 }
 .content-block .content-item.heads .content-inner .head-item:after {
@@ -340,14 +341,9 @@ p {
   z-index: 999;
 }
 .content-block .content-item.plan .content-inner .content-title {
-  margin-top: 40px;
-}
-.content-block .content-item.plan .content-inner.active .content-title {
   position: absolute;
+  top: 40px;
   z-index: 99;
-}
-.content-block .content-item.plan .content-inner.active .content-preview-column {
-  display: block;
 }
 .content-block .content-item.plan .content-inner .content-preview-image {
   display: none;
@@ -356,7 +352,7 @@ p {
   padding-right: 380px;
   height: 580px;
   position: relative;
-  background-color: #fff;
+  background-color: #000;
   box-sizing: border-box;
 }
 .content-block .content-item.plan .content-inner .content-preview-image .preview-inner {
@@ -391,39 +387,43 @@ p {
   margin-top: 40px;
   width: 100%;
   max-width: 380px;
-  background-color: #fff;
   position: absolute;
   right: 40px;
   top: 0;
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
 }
 .content-block .content-item.plan .content-inner .content-preview-column.active {
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-  max-width: 1280px;
+  display: block;
 }
-.content-block .content-item.plan .content-inner .content-preview-column.active .preview-body {
+.content-block .content-item.plan .content-inner .content-preview-column.open {
+  position: relative;
+  max-width: none;
+  left: 0;
+  right: 0;
+}
+.content-block .content-item.plan .content-inner .content-preview-column.open .preview-body {
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
 }
-.content-block .content-item.plan .content-inner .content-preview-column.active .preview-title {
+.content-block .content-item.plan .content-inner .content-preview-column.open .preview-title {
   font-size: 24pt;
 }
-.content-block .content-item.plan .content-inner .content-preview-column.active .preview-description {
+.content-block .content-item.plan .content-inner .content-preview-column.open .preview-description {
   -webkit-columns: 4 320px;
      -moz-columns: 4 320px;
           columns: 4 320px;
-  -webkit-column-gap: 2em;
-     -moz-column-gap: 2em;
-          column-gap: 2em;
+  -webkit-column-gap: 3em;
+     -moz-column-gap: 3em;
+          column-gap: 3em;
   -webkit-column-rule: 5px solid #000;
      -moz-column-rule: 5px solid #000;
           column-rule: 5px solid #000;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .content-block .content-item.plan .content-inner .content-preview-column .preview-images {
-  background-color: #fff;
+  background-color: rgba(0,0,0,0.8);
+}
+.content-block .content-item.plan .content-inner .content-preview-column .preview-images .preview-image {
+  max-width: 430px;
 }
 .content-block .content-item.plan .content-inner .content-preview-column .preview-images .swiper-button-prev,
 .content-block .content-item.plan .content-inner .content-preview-column .preview-images .swiper-button-next {
