@@ -403,6 +403,10 @@ p {
   transition: 0.3s ease-in;
   max-width: 1280px;
 }
+.content-block .content-item.plan .content-inner .content-preview-column.active .preview-body {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
 .content-block .content-item.plan .content-inner .content-preview-column.active .preview-title {
   font-size: 24pt;
 }
@@ -467,7 +471,8 @@ p {
   line-height: 36px;
 }
 .content-block .content-item.plan .content-inner .content-preview-column .preview-body {
-  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
   overflow: hidden;
   height: 380px;
   background-color: #fff;
